@@ -1,0 +1,97 @@
+/* ================================
+   Device Information Section - Responsive
+   ================================ */
+
+.device-section {
+    background-color: rgba(255, 255, 255, 0.98);
+    border-radius: 16px;
+    padding: 32px;
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.device-section:hover {
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+}
+
+.device-title {
+    font-size: clamp(18px, 3vw, 22px);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 700;
+    color: #2d3748;
+    margin-bottom: 20px;
+    border-bottom: 3px solid #667eea;
+    padding-bottom: 12px;
+}
+
+.device-information {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.device-information p {
+    font-size: 15px;
+    color: #4a5568;
+    line-height: 1.6;
+    padding: 12px 16px;
+    background-color: #f7fafc;
+    border-radius: 8px;
+    border-left: 4px solid #667eea;
+    transition: all 0.3s ease;
+}
+
+.device-information p:hover {
+    background-color: #edf2f7;
+    transform: translateX(4px);
+}
+
+.device-information p span:first-child {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+#current-ssid {
+    color: #667eea;
+    font-weight: 700;
+}
+
+/* ================================
+   Responsive Design - Device Section
+   ================================ */
+
+/* Small devices (phones, less than 640px) */
+@media (max-width: 639px) {
+    .device-section {
+        padding: 24px 20px;
+        border-radius: 12px;
+    }
+
+    .device-title {
+        font-size: 18px;
+        margin-bottom: 16px;
+        padding-bottom: 10px;
+    }
+
+    .device-information p {
+        font-size: 14px;
+        padding: 10px 14px;
+    }
+}
+
+/* Medium devices (tablets, 640px and up) */
+@media (min-width: 640px) and (max-width: 1023px) {
+    .device-section {
+        padding: 28px;
+    }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+    .device-section {
+        max-width: 550px;
+    }
+}

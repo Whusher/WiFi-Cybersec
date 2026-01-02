@@ -1,0 +1,165 @@
+/* ================================
+   Main Layout Styles - Responsive Design
+   ================================ */
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh;
+    position: relative;
+}
+
+/* Language Toggle Button */
+.language-btn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #667eea;
+    border: 2px solid #667eea;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    z-index: 1000;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.language-btn:hover {
+    background-color: #667eea;
+    color: white;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.language-btn:active {
+    transform: translateY(0);
+}
+
+/* Header Section */
+header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px 20px 30px;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.user-captive {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 20px;
+}
+
+.title-form {
+    font-size: clamp(24px, 4vw, 32px);
+    color: #2d3748;
+    font-weight: 700;
+    text-align: center;
+}
+
+#provider {
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    object-fit: contain;
+}
+
+header p {
+    max-width: 600px;
+    text-align: center;
+    color: #4a5568;
+    font-size: clamp(14px, 2vw, 16px);
+    line-height: 1.6;
+    padding: 0 20px;
+}
+
+/* Main Content Section */
+.main-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 20px;
+    gap: 30px;
+}
+
+/* Footer */
+footer {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 20px;
+    text-align: center;
+    color: #4a5568;
+    font-size: 14px;
+    box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+    margin-top: 60px;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* ================================
+   Responsive Design - Mobile First
+   ================================ */
+
+/* Small devices (phones, less than 640px) */
+@media (max-width: 639px) {
+    .language-btn {
+        top: 10px;
+        right: 10px;
+        padding: 8px 16px;
+        font-size: 12px;
+    }
+
+    header {
+        padding: 30px 15px 20px;
+    }
+
+    .user-captive {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    #provider {
+        width: 80px;
+        height: 80px;
+    }
+
+    .main-content {
+        margin: 20px auto;
+        padding: 0 15px;
+        gap: 20px;
+    }
+
+    footer {
+        margin-top: 40px;
+    }
+}
+
+/* Medium devices (tablets, 640px and up) */
+@media (min-width: 640px) and (max-width: 1023px) {
+    .main-content {
+        padding: 0 30px;
+    }
+}
+
+/* Large devices (desktops, 1024px and up) */
+@media (min-width: 1024px) {
+    .main-content {
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+}
