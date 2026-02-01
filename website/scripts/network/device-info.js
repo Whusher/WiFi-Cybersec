@@ -5,11 +5,11 @@
  * Default device information (used as fallback/example)
  */
 const defaultDeviceInfo = {
-    ssid: 'TotalPlay-AN829',
+    ssid: 'Infinitum-AN829',
     mac: '00:1A:2B:3C:4D:5E',
     ip: '192.168.1.100',
-    deviceName: 'Samsung Galaxy S21',
-    provider: 'TotalPlay',
+    deviceName: 'Samsung Galaxy S21', // Check if detect device connection is possible
+    provider: 'Infinitum', // URI and bash scripting should determine the provider
     gateway: '192.168.1.1',
     signal: '85%'
 };
@@ -115,7 +115,7 @@ function updateProviderLogo(provider) {
     // Map provider names to logo paths
     const providerLogos = {
         'TotalPlay': './images/TotalPlay/logo.png',
-        'Infinitum': './images/Infinitum/logo.png',
+        'Infinitum': './images/Infinitum/logo.webp',
         'Izzi': './images/Izzi/logo.png',
         'Megacable': './images/Megacable/logo.png',
         'Axtel': './images/Axtel/logo.png',

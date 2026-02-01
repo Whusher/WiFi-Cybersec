@@ -3,7 +3,7 @@
    ================================ */
 
 body {
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    background: linear-gradient(135deg, #3d9bf9 0%, #82d3e5 100%);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     min-height: 100vh;
     position: relative;
@@ -15,8 +15,8 @@ body {
     top: 20px;
     right: 20px;
     background-color: rgba(255, 255, 255, 0.95);
-    color: #667eea;
-    border: 2px solid #667eea;
+    color: #0020b1;
+    border: 2px solid #004db9;
     border-radius: 8px;
     padding: 10px 20px;
     font-weight: 700;
@@ -28,7 +28,7 @@ body {
 }
 
 .language-btn:hover {
-    background-color: #667eea;
+    background-color: #264bf4;
     color: white;
     transform: translateY(-2px);
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);

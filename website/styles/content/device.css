@@ -23,7 +23,7 @@
     font-weight: 700;
     color: #2d3748;
     margin-bottom: 20px;
-    border-bottom: 3px solid #667eea;
+    border-bottom: 3px solid #001c9a;
     padding-bottom: 12px;
 }
 
@@ -40,7 +40,7 @@
     padding: 12px 16px;
     background-color: #f7fafc;
     border-radius: 8px;
-    border-left: 4px solid #667eea;
+    border-left: 4px solid #001ea2;
     transition: all 0.3s ease;
 }
 
@@ -55,7 +55,7 @@
 }
 
 #current-ssid {
-    color: #667eea;
+    color: #1b44ff;
     font-weight: 700;
 }
 
